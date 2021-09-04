@@ -230,7 +230,7 @@ class HttpClient:
         json = {"query": query, "include_users": include_users}
 
         if limit:
-            json["limit"] = limit
+            json["limit"] = limit # type: ignore
 
         if before:
             json["before"] = before
